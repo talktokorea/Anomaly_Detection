@@ -23,6 +23,7 @@
 ## Model-based Methods
 ### Isolation Forest 
 - Tree based method로서 데이터를 분할 및 고립시켜 이상치를 탐지
+- feature를 랜덤하게 선택하고 선택한 feature의 최대값과 최소값의 사이 값을 분할함으로써 관측치들을 분리
 - [Isolation forest IEEE 2008](https://arxiv.org/pdf/1811.02141.pdf)   
 ![image](https://user-images.githubusercontent.com/67107675/114795087-cc355780-9dc8-11eb-9458-582164a8c5ed.png)
 
