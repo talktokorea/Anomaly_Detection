@@ -29,7 +29,12 @@
 
 ### One-Class SVM 
 - 데이터가 존재하는 영역을 정의하여, 영역 밖의 데이터들은 이상치로 간주
-- [One-Class SVMs for Document Classification 2001](https://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf)
+- 엄연히 말하면 outlier-detection 방법 아니지만, novelty-detection method 이라고 할수는 있음
+  ㄴ training set은 outlier 에 의해서 오염되지 않아야 한다.
+- [One-Class SVMs for Document Classification 2001](https://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf)   
+![image](https://user-images.githubusercontent.com/67107675/114798476-5fbe5680-9dd0-11eb-9098-52089ea9acff.png)
+
+
 - [Deep One-Class Classification ICML 2018](http://data.bit.uni-bonn.de/publications/ICML2018.pdf)   
 ![image](https://user-images.githubusercontent.com/67107675/114795830-7e215380-9dca-11eb-9068-58c7ef4c39c2.png)
 
@@ -46,4 +51,5 @@
 - 고차원 데이터에서 주로 사용하는 방법론으로서 데이터를 압축/복원하여 복원된 정도로 이상치를 판단
 
 - reference   
-https://hoya012.github.io/blog/anomaly-detection-overview-1/
+https://hoya012.github.io/blog/anomaly-detection-overview-1/   
+https://flonelin.wordpress.com/2017/03/29/novelty%EC%99%80-outlier-detection/
