@@ -23,8 +23,15 @@
 ## Model-based Methods
 ### Isolation Forest 
 - Tree based method로서 데이터를 분할 및 고립시켜 이상치를 탐지
+- [Isolation forest IEEE 2008](https://arxiv.org/pdf/1811.02141.pdf)   
+![image](https://user-images.githubusercontent.com/67107675/114795087-cc355780-9dc8-11eb-9458-582164a8c5ed.png)
+
 ### One-Class SVM 
 - 데이터가 존재하는 영역을 정의하여, 영역 밖의 데이터들은 이상치로 간주
+- [One-Class SVMs for Document Classification 2001](https://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf)
+- [Deep One-Class Classification ICML 2018](http://data.bit.uni-bonn.de/publications/ICML2018.pdf)   
+![image](https://user-images.githubusercontent.com/67107675/114795830-7e215380-9dca-11eb-9068-58c7ef4c39c2.png)
+
 
 ## Density/Distance-based Methods
 ### Gaussian Mixture Model
