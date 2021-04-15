@@ -21,20 +21,21 @@
 
 ## Anomaly Detection 방법론
 ## Model-based Methods
-### Isolation Forest 
+### Isolation Forest (unsupervised)
 - Tree based method로서 데이터를 분할 및 고립시켜 이상치를 탐지
 - feature를 랜덤하게 선택하고 선택한 feature의 최대값과 최소값의 사이 값을 분할함으로써 관측치들을 분리
 - [Isolation forest IEEE 2008](https://arxiv.org/pdf/1811.02141.pdf)   
 ![image](https://user-images.githubusercontent.com/67107675/114795087-cc355780-9dc8-11eb-9458-582164a8c5ed.png)
 
-### One-Class SVM 
+### One-Class SVM (unsupervised)
 - 데이터가 존재하는 영역을 정의하여, 영역 밖의 데이터들은 이상치로 간주
 - 엄연히 말하면 outlier-detection 방법 아니지만, novelty-detection method 이라고 할수는 있음
   ㄴ training set은 outlier 에 의해서 오염되지 않아야 한다.
 - [One-Class SVMs for Document Classification 2001](https://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf)   
 ![image](https://user-images.githubusercontent.com/67107675/114798476-5fbe5680-9dd0-11eb-9098-52089ea9acff.png)
 
-
+### Deep SVDD (semi-supervised)
+- 딥러닝을 기반으로 학습한 데이터의 feature space를 통해 정상 데이터를 둘러싸는 가장 작은 구를 찾는 것이 목적
 - [Deep One-Class Classification ICML 2018](http://data.bit.uni-bonn.de/publications/ICML2018.pdf)   
 ![image](https://user-images.githubusercontent.com/67107675/114795830-7e215380-9dca-11eb-9068-58c7ef4c39c2.png)
 
