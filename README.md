@@ -1,6 +1,6 @@
 # Anomaly_Detection
 
-## Anomaly Detection 종류 (학습데이터에 따라)
+## 학습데이터에 따른 종류
 1. Supervised Anomaly Detection
    - 정상 sample과 비정상 sample의 Data와 Label이 모두 존재하는 경우
    - pros : 양/불 판정 정확도가 높다.
@@ -19,7 +19,6 @@
 ![image](https://user-images.githubusercontent.com/67107675/114683454-0102c980-9d4b-11eb-9f95-01c5483bc9a8.png)
 
 
-## Anomaly Detection 방법론
 ## Model-based Methods
 ### Isolation Forest (unsupervised)
 - Tree based method로서 데이터를 분할 및 고립시켜 이상치를 탐지
