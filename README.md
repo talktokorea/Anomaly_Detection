@@ -30,7 +30,7 @@
 
 ### One-Class SVM (unsupervised)
 - 데이터가 존재하는 영역을 정의하여, 영역 밖의 데이터들은 이상치로 간주
-- 엄연히 outlier-detection 방법 아니지만, novelty-detection method 이라고 할수는 있음
+- 엄연히 outlier-detection 방법 아니지만, novelty-detection method 이라고 할수는 있음   
   ㄴ training set은 outlier 에 의해서 오염되지 않아야 한다.
 - [One-Class SVMs for Document Classification 2001](https://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf) [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/One_class_SVM.ipynb)     
 ![image](https://user-images.githubusercontent.com/67107675/114798476-5fbe5680-9dd0-11eb-9098-52089ea9acff.png)
