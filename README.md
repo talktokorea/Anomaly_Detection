@@ -1,16 +1,18 @@
 # Anomaly_Detection
 
 ## 학습데이터에 따른 종류
-1. Supervised Anomaly Detection
+1. Supervised 
    - 정상 sample과 비정상 sample의 Data와 Label이 모두 존재하는 경우
    - pros : 양/불 판정 정확도가 높다.
-   - cons: 비정상 sample을 취득하는데 시간과 비용이 많이 든다. Class-Imbalance 문제를 해결해야 한다.
-2. Semi-supervised Anomaly Detection
+   - cons : 비정상 sample을 취득하는데 시간과 비용이 많이 든다. Class-Imbalance 문제를 해결해야 한다.
+
+2. Semi-supervised
    - 정상 sample만 이용해서 모델을 학습하는 경우
-   - method : One-Class SVM & Deep SVDD
    - pros : 비교적 활발하게 연구가 진행되고 있으며, 정상 sample만 있어도 학습이 가능하다.
    - cons : Supervised Anomaly Detection 방법론과 비교했을 때 상대적으로 양/불 판정 정확도가 떨어진다.
-4. Unsupervised Anomaly Detection
+   - method : One-Class SVM & Deep SVDD
+ 
+3. Unsupervised 
    - 대부분의 데이터가 정상 sample이라는 가정을 하여 Label 취득 없이 학습을 시키는 경우
    - method : PCA & Auto-Encoder based Method 
    - pros : Labeling 과정이 필요하지 않다.
@@ -28,7 +30,7 @@
 
 ### One-Class SVM (unsupervised)
 - 데이터가 존재하는 영역을 정의하여, 영역 밖의 데이터들은 이상치로 간주
-- 엄연히 말하면 outlier-detection 방법 아니지만, novelty-detection method 이라고 할수는 있음
+- 엄연히 outlier-detection 방법 아니지만, novelty-detection method 이라고 할수는 있음
   ㄴ training set은 outlier 에 의해서 오염되지 않아야 한다.
 - [One-Class SVMs for Document Classification 2001](https://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf) [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/One_class_SVM.ipynb)     
 ![image](https://user-images.githubusercontent.com/67107675/114798476-5fbe5680-9dd0-11eb-9098-52089ea9acff.png)
