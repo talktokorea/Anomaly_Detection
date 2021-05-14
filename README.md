@@ -43,7 +43,7 @@
 
 ## Density/Distance-based Methods
 ### Deep Autoencoding Gaussian Mixture Model(DAGMM)
-- DAGMM : autoencoder + GMM으로 정보 유지(Key information) 및 밀도 추정에 강력한 성능을 보인다. 게임 회사 어뷰징에 활용 되는 것을 확인함. 압축 네트워크(Compression network)와 추정 네트워크(Estimation network)로 이뤄져 있다.
+- DAGMM : autoencoder + GMM으로 정보 유지(Key information) 및 밀도 추정에 강력한 성능을 보인다. 저차원으로 사영시킨뒤 GMM이용하여 각 군집의 밀도 함수를 추정 & 중심으로부터 거리가 먼 자료를 이상치로 탐지. 압축 네트워크(Compression network)와 추정 네트워크(Estimation network)로 이뤄져 있다. 게임 회사 어뷰징에 활용 되는 것을 확인함
  > 1) 압축 네트워크 : autoencoder 사용하여 입력 데이터의 차원을 축소
  > 2) 추정 네트워크 : 1)의 축소된 데이터를 입력값으로 사용하여 GMM으로 밀도를 추정 (k 설정 필요)
 - [Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection ICLR 2018](https://sites.cs.ucsb.edu/~bzong/doc/iclr18-dagmm.pdf)
