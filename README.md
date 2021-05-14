@@ -42,7 +42,13 @@
 
 
 ## Density/Distance-based Methods
-### Gaussian Mixture Model
+### Deep Autoencoding Gaussian Mixture Model(DAGMM)
+- DAGMM : autoencoder + GMM으로 정보 유지(Key information) 및 밀도 추정에 강력한 성능을 보인다. 게임 회사 어뷰징에 활용 되는 것을 확인함. 압축 네트워크(Compression network)와 추정 네트워크(Estimation network)로 이뤄져 있다.
+ > 1) 압축 네트워크 : autoencoder 사용하여 입력 데이터의 차원을 축소
+ > 2) 추정 네트워크 : 1)의 축소된 데이터를 입력값으로 사용하여 GMM으로 밀도를 추정 (k 설정 필요)
+- [Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection ICLR 2018](https://sites.cs.ucsb.edu/~bzong/doc/iclr18-dagmm.pdf)
+![image](https://user-images.githubusercontent.com/67107675/118203432-0ad93300-b497-11eb-8785-aaf1a4ce9846.png)
+
 ### k-Nearest Neighbours (kNN) method
 ### LOF(Local Outlier Factors)
 - 데이터의 밀도 또는 거리 척도를 통해, majority 군집과 minority 군집을 생성하여 이상치를 탐지
@@ -55,3 +61,4 @@
 - reference   
 https://hoya012.github.io/blog/anomaly-detection-overview-1/   
 https://flonelin.wordpress.com/2017/03/29/novelty%EC%99%80-outlier-detection/
+https://m-insideout.tistory.com/21
