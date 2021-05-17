@@ -50,8 +50,14 @@
 ![image](https://user-images.githubusercontent.com/67107675/118203432-0ad93300-b497-11eb-8785-aaf1a4ce9846.png)
 
 ### k-Nearest Neighbours (kNN) method
+
 ### LOF(Local Outlier Factors)
-- 데이터의 밀도 또는 거리 척도를 통해, majority 군집과 minority 군집을 생성하여 이상치를 탐지
+- LOF : 데이터의 밀도 또는 거리 척도를 통해, majority 군집과 minority 군집을 생성하여 이상치를 탐지. 관측치의 주변 데이터(neighbor)를 이용하여 국소적(local) 관점으로 이상치 정도를 파악하는 것.
+- pros : 집된 클러스터에서 조금만 떨어져 있어도 이상치로 탐지해준다. 밀집된 곳에 가까운 이상치들은 높은 LOF score를 가진다.
+- cons : 이상치 판단 기준을 정해줘야 한다. 차원이 늘어나면 어렵다.
+- [LOF: identifying density-based local outliers ACM 2000](https://dl.acm.org/doi/10.1145/342009.335388)  [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/LOF.ipynb)   
+![image](https://user-images.githubusercontent.com/67107675/118427317-e0da7780-b707-11eb-8412-afbabf92f598.png)
+
 
 ## Reconstruction-based Methods
 ### PCA(Principal Component Analysis) Method
