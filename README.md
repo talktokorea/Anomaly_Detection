@@ -72,3 +72,4 @@ https://hoya012.github.io/blog/anomaly-detection-overview-1/
 https://flonelin.wordpress.com/2017/03/29/novelty%EC%99%80-outlier-detection/
 https://m-insideout.tistory.com/21
 https://spri.kr/posts/view/23193?code=industry_trend
+https://kh-kim.github.io/blog/2019/12/12/Deep-Anomaly-Detection.html
