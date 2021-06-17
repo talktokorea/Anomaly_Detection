@@ -61,7 +61,9 @@
 ## Reconstruction-based Methods
 - 이상을 판별할 데이터를 저차원 형태의 잠재 구조(latent structure)를 획득하고, 그 이후 인위적으로 재구성한 데이터를 생성하기 위한 모델을 사용
 ### PCA(Principal Component Analysis)
-- PCA는 선형 재구성으로 제한되며 상관 관계가 높고 가우스를 따르는 데이터 분포에만 적용 가능하다는 한계가 있음 [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/PCA.ipynb)   
+- 선형 재구성으로 제한되며 상관 관계가 높고 가우스를 따르는 데이터 분포에만 적용 가능하다는 한계가 있음 [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/PCA.ipynb)   
+<img src="https://user-images.githubusercontent.com/67107675/122353725-4a5dd800-cf8b-11eb-8d2f-74b7364914ab.png" width = "70%">
+
 ### Auto-Encoder based Method (ex. AAE(Adversarial Autoencoders))
 - 고차원 데이터에서 주로 사용하는 방법론으로서 데이터를 압축/복원하여 복원된 정도로 이상치를 판단
 
