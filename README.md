@@ -49,8 +49,7 @@
 - [Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection ICLR 2018](https://sites.cs.ucsb.edu/~bzong/doc/iclr18-dagmm.pdf)  [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/DAGMM_Pytorch.ipynb)        
 ![image](https://user-images.githubusercontent.com/67107675/118203432-0ad93300-b497-11eb-8785-aaf1a4ce9846.png)
 
-### k-Nearest Neighbours (kNN) method
-
+## k-Nearest Neighbours (kNN) method
 ### LOF(Local Outlier Factors)
 - LOF : 데이터의 밀도 또는 거리 척도를 통해, majority 군집과 minority 군집을 생성하여 이상치를 탐지. 관측치의 주변 데이터(neighbor)를 이용하여 국소적(local) 관점으로 이상치 정도를 파악하는 것.
 - pros : 집된 클러스터에서 조금만 떨어져 있어도 이상치로 탐지해준다. 밀집된 곳에 가까운 이상치들은 높은 LOF score를 가진다.
@@ -60,7 +59,9 @@
 
 
 ## Reconstruction-based Methods
-### PCA(Principal Component Analysis) Method
+- 이상을 판별할 데이터를 저차원 형태의 잠재 구조(latent structure)를 획득하고, 그 이후 인위적으로 재구성한 데이터를 생성하기 위한 모델을 사용
+### PCA(Principal Component Analysis)
+- PCA는 선형 재구성으로 제한되며 상관 관계가 높고 가우스를 따르는 데이터 분포에만 적용 가능하다는 한계가 있음 [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/PCA.ipynb)   
 ### Auto-Encoder based Method (ex. AAE(Adversarial Autoencoders))
 - 고차원 데이터에서 주로 사용하는 방법론으로서 데이터를 압축/복원하여 복원된 정도로 이상치를 판단
 
@@ -68,3 +69,4 @@
 https://hoya012.github.io/blog/anomaly-detection-overview-1/   
 https://flonelin.wordpress.com/2017/03/29/novelty%EC%99%80-outlier-detection/
 https://m-insideout.tistory.com/21
+https://spri.kr/posts/view/23193?code=industry_trend
