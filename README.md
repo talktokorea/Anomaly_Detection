@@ -64,12 +64,21 @@
 - 선형 재구성으로 제한되며 상관 관계가 높고 가우스를 따르는 데이터 분포에만 적용 가능하다는 한계가 있음 [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/PCA.ipynb)   
 &nbsp; <img src="https://user-images.githubusercontent.com/67107675/122353725-4a5dd800-cf8b-11eb-8d2f-74b7364914ab.png" width = "50%">
 
-### Auto-Encoder based Method (ex. AAE(Adversarial Autoencoders))
-- 고차원 데이터에서 주로 사용하는 방법론으로서 데이터를 압축/복원하여 복원된 정도로 이상치를 판단
+## Auto-Encoder based Method 
+<img src = "https://user-images.githubusercontent.com/67107675/126440633-0dd0dd88-a8d3-42f3-8a5a-ab70ea76bc35.png" width="40%">
+
+### VAE(Variational Autoencoders)
+![image](https://user-images.githubusercontent.com/67107675/126440804-89bec54d-f9ee-4127-aae2-86db3ffed5f6.png)
+
+### AAE(Adversarial Autoencoders)
+- VAE(Variational AutoEncoder) + GAN : latent distribution(잠재 분포) 검사하는 판별기(discriminator)를 도입하여 원하는 형태의 latent distribution(잠재 분포) 을 좀더 엄격하게 강제 가능
+
+### RaPP(Reconstruction along Projection Pathway)
 
 - reference   
-https://hoya012.github.io/blog/anomaly-detection-overview-1/   
-https://flonelin.wordpress.com/2017/03/29/novelty%EC%99%80-outlier-detection/
-https://m-insideout.tistory.com/21
-https://spri.kr/posts/view/23193?code=industry_trend
-https://kh-kim.github.io/blog/2019/12/12/Deep-Anomaly-Detection.html
+https://hoya012.github.io/blog/anomaly-detection-overview-1/    
+https://flonelin.wordpress.com/2017/03/29/novelty%EC%99%80-outlier-detection/   
+https://m-insideout.tistory.com/21   
+https://spri.kr/posts/view/23193?code=industry_trend    
+https://kh-kim.github.io/blog/2019/12/12/Deep-Anomaly-Detection.html    
+https://www.makinarocks.ai/ko/blog/view/750
