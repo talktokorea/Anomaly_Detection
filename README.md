@@ -21,7 +21,13 @@
 
 ![image](https://user-images.githubusercontent.com/67107675/114683454-0102c980-9d4b-11eb-9f95-01c5483bc9a8.png)
 
-- Out-of-distribution Detection : In-dstribution 데이터 셋을 CIFAR-10로 가정하고, Out-of-distribution 데이터 셋을 LSUN, SVHN 가정하여 In-distribution 데이터 셋을 얼마나 정확히 분류 하는지, LSUN, SVHN 등 Out-of-distribution 데이터 셋은 얼마나 잘 걸러낼 수 있는지를 살펴보는 방식
+- Novelty Detection vs Outlier Detection : 비정상 sample을 구분. If 강아지 = normal class
+   - Novel sample(=Detection) : 새로운 형태의 강아지
+   - Outlier/Abnormal sample(=Detection) : 호랑이, 말(강아지와 관련 x)
+
+- Out-of-distribution Detection : if In-dstribution 데이터 셋 = CIFAR-10로 가정하고, Out-of-distribution 데이터 셋을 LSUN, SVHN
+   - CIFAR-10인 In-distribution 데이터 셋을 얼마나 정확히 분류 하는지
+   - LSUN, SVHN인 Out-of-distribution 데이터 셋은 얼마나 잘 걸러낼 수 있는지를 살펴보는 방식
 
 ## Model-based Methods
 ### Isolation Forest (unsupervised)
