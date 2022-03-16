@@ -14,9 +14,10 @@
  
 3. Unsupervised 
    - 대부분의 데이터가 정상 sample이라는 가정을 하여 Label 취득 없이 학습을 시키는 경우
-   - method : PCA & Auto-Encoder based Method 
    - pros : Labeling 과정이 필요하지 않다.
    - cons : 양/불 판정 정확도가 높지 않고 hyper parameter에 매우 민감하다.
+   - method : PCA & Auto-Encoder based Method 
+
 
 ![image](https://user-images.githubusercontent.com/67107675/114683454-0102c980-9d4b-11eb-9f95-01c5483bc9a8.png)
 
