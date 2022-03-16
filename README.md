@@ -21,6 +21,7 @@
 
 ![image](https://user-images.githubusercontent.com/67107675/114683454-0102c980-9d4b-11eb-9f95-01c5483bc9a8.png)
 
+- Out-of-distribution Detection : In-dstribution 데이터 셋을 CIFAR-10로 가정하고, Out-of-distribution 데이터 셋을 LSUN, SVHN 가정하여 In-distribution 데이터 셋을 얼마나 정확히 분류 하는지, LSUN, SVHN 등 Out-of-distribution 데이터 셋은 얼마나 잘 걸러낼 수 있는지를 살펴보는 방식
 
 ## Model-based Methods
 ### Isolation Forest (unsupervised)
@@ -38,6 +39,8 @@
 
 ### Deep SVDD (semi-supervised)
 - 딥러닝을 기반으로 학습한 데이터의 feature space를 통해 정상 데이터를 둘러싸는 가장 작은 구를 찾는 것이 목적
+- 장점: 정상 sample만 있어도 학습이 가능
+- 단점: Supervised Anomaly Detection과 비교했을 시, 상대적으로 양/불 판정 정확도가 떨어짐
 - [Deep One-Class Classification ICML 2018](http://data.bit.uni-bonn.de/publications/ICML2018.pdf)  [[Code]](https://colab.research.google.com/github/sejin-sim/Anomaly_Detection/blob/main/Deep_SVDD_Pytorch.ipynb)        
 ![image](https://user-images.githubusercontent.com/67107675/114795830-7e215380-9dca-11eb-9068-58c7ef4c39c2.png)
 
