@@ -31,7 +31,7 @@
 
 ## 모델 : [작성 中](https://github.com/sejin-sim/Anomaly_Detection/blob/main/Model.md)
 
-## 논문 : Title(Detatil 포함)
+## 논문 정리
 | Num | Title | Summary
 |:-:|---|---|
 |1| [[2021 ACM] Deep Learning for Anomaly Detection, A Review](https://github.com/sejin-sim/Anomaly_Detection/blob/main/paper/Deep_Learning_for_Anomaly_Detection_A_Review.pdf)|Review 논문 <br> - Major Problem Complexities <br> - Main Challenges Tackled <br>  - Categorization of Deep Anomaly Detection <br>   1. Deep Learning for Feature Extraction <br>   2. Learning Feature Representations of Normality <br>   3. End-to-end Anomaly Score Learning| 
