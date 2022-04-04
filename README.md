@@ -31,11 +31,11 @@
 
 ## 모델 : [작성 中](https://github.com/sejin-sim/Anomaly_Detection/blob/main/Model.md)
 
-## 논문 : Title 클릭 시 상세 내용 정리
+## 논문 : Title(Detatil 포함)
 | Num | Title | Summary
 |:-:|---|---|
-|1| [2021 ACM] Deep Learning for Anomaly Detection, A Review|[note](https://colab.research.google.com/github/sejin-sim/Practical_statistics/blob/main/1_%ED%83%90%EC%83%89%EC%A0%81_%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%B6%84%EC%84%9D(EDA).ipynb)|
-|2|[2019 ICCV] Memorizing Normality to Detect Anomaly; MemAE|[note](https://colab.research.google.com/github/sejin-sim/Practical_statistics/blob/main/2_데이터와_표본분포.ipynb)|
+|1| [2021 ACM] Deep Learning for Anomaly Detection, A Review |Review 논문 <br> - Major Problem Complexities <br> - Main Challenges Tackled <br>  - Categorization of Deep Anomaly Detection <br>   1. Deep Learning for Feature Extraction <br>   2. Learning Feature Representations of Normality <br>   3. End-to-end Anomaly Score Learning| 
+|2|[2019 ICCV] Memorizing Normality to Detect Anomaly; MemAE|- AE의 한계점 : 종종 이상치 재구성이 잘 됨 <br>- 제안론 구조 : 인코더-메모리모듈(hard shrinkage operator)-디코더 <br>  1. 인코더 : 인풋을 인코딩하여 쿼리로 사용 <br> 2. 메모리 모듈 <br>   1) 표준 정상 패턴을 기록<br>    2) Hard Shrinkage(유사도가 임계치보다 낮은 경우 0으로 만듬) <br> → 메모리 효율성 & 이상치의 희소성 ↑ <br>  3. 디코더 : 찾은 유사한 정상 패턴을 통해 재구성<br> - 결론 : 재구성 에러가 높은 샘플 = 이상치|
 
 
 - reference   
