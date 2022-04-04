@@ -31,8 +31,11 @@
 
 ## 모델 : [작성 中](https://github.com/sejin-sim/Anomaly_Detection/blob/main/Model.md)
 
-## 논문 
-
+## 논문 : Title 클릭 시 상세 내용 정리
+| Num | Title | Summary
+|:-:|---|---|
+|1| [2021 ACM] Deep Learning for Anomaly Detection, A Review|[note](https://colab.research.google.com/github/sejin-sim/Practical_statistics/blob/main/1_%ED%83%90%EC%83%89%EC%A0%81_%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%B6%84%EC%84%9D(EDA).ipynb)|
+|2|[2019 ICCV] Memorizing Normality to Detect Anomaly; MemAE|[note](https://colab.research.google.com/github/sejin-sim/Practical_statistics/blob/main/2_데이터와_표본분포.ipynb)|
 
 
 - reference   
