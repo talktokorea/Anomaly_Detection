@@ -29,7 +29,7 @@
    - CIFAR-10인 In-distribution 데이터 셋을 얼마나 정확히 분류 하는지
    - LSUN, SVHN인 Out-of-distribution 데이터 셋은 얼마나 잘 걸러낼 수 있는지를 살펴보는 방식
 
-## 모델 : [작성 中](https://github.com/sejin-sim/Anomaly_Detection/blob/main/Model.md)
+## 모델 : [작성 中](https://github.com/sejin-sim/Anomaly_Detection/blob/main/Methods/README.md)
 
 ## 논문 정리
 | Num | Title | Summary
