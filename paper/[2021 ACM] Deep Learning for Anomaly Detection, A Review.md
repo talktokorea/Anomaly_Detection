@@ -112,7 +112,7 @@ status: Finished!
             
 3. PROBLEM COMPLEXITIES AND CHALLENGES 정리
 
-![Untitled](Deep%20Learn%2020e25/Untitled.png)
+![Untitled](/2021 ACM] Deep Learning for Anomaly Detection, A Review/Untitled 1.png)
 
 - Deep methods 쓰면 기존과 달리 end-to-end 최적화 &  특화된 표현 학습이 가능
 - Intricate Relation Learning : 복잡한 관계 학습
