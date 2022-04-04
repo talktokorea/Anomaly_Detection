@@ -34,8 +34,8 @@
 ## 논문 : Title(Detatil 포함)
 | Num | Title | Summary
 |:-:|---|---|
-|1| [2021 ACM] Deep Learning for Anomaly Detection, A Review |Review 논문 <br> - Major Problem Complexities <br> - Main Challenges Tackled <br>  - Categorization of Deep Anomaly Detection <br>   1. Deep Learning for Feature Extraction <br>   2. Learning Feature Representations of Normality <br>   3. End-to-end Anomaly Score Learning| 
-|2|[2019 ICCV] Memorizing Normality to Detect Anomaly; MemAE|- AE의 한계점 : 종종 이상치 재구성이 잘 됨 <br>- 제안론 구조 : 인코더-메모리모듈(hard shrinkage operator)-디코더 <br>  1. 인코더 : 인풋을 인코딩하여 쿼리로 사용 <br> 2. 메모리 모듈 <br>   1) 표준 정상 패턴을 기록<br>    2) Hard Shrinkage(유사도가 임계치보다 낮은 경우 0으로 만듬) <br> → 메모리 효율성 & 이상치의 희소성 ↑ <br>  3. 디코더 : 찾은 유사한 정상 패턴을 통해 재구성<br> - 결론 : 재구성 에러가 높은 샘플 = 이상치|
+|1| [[2021 ACM] Deep Learning for Anomaly Detection, A Review](https://github.com/sejin-sim/Anomaly_Detection/blob/main/paper/Deep_Learning_for_Anomaly_Detection_A_Review.pdf)|Review 논문 <br> - Major Problem Complexities <br> - Main Challenges Tackled <br>  - Categorization of Deep Anomaly Detection <br>   1. Deep Learning for Feature Extraction <br>   2. Learning Feature Representations of Normality <br>   3. End-to-end Anomaly Score Learning| 
+|2|[[2019 ICCV] Memorizing Normality to Detect Anomaly; MemAE](https://github.com/sejin-sim/Anomaly_Detection/blob/main/paper/Memorizing_Normality_to_Detect_Anomaly_(MemAE).pdf)|- AE의 한계점 : 종종 이상치 재구성이 잘 됨 <br>- 제안론 구조 : 인코더-메모리모듈(hard shrinkage operator)-디코더 <br>  1. 인코더 : 인풋을 인코딩하여 쿼리로 사용 <br> 2. 메모리 모듈 <br>   1) 표준 정상 패턴을 기록<br>    2) Hard Shrinkage(유사도가 임계치보다 낮은 경우 0으로 만듬) <br> → 메모리 효율성 & 이상치의 희소성 ↑ <br>  3. 디코더 : 찾은 유사한 정상 패턴을 통해 재구성<br> - 결론 : 재구성 에러가 높은 샘플 = 이상치|
 
 
 - reference   
