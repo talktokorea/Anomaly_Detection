@@ -36,7 +36,7 @@
 |:-:|---|---|
 |1| [[2021 ACM] Deep Learning for Anomaly Detection, A Review](https://github.com/sejin-sim/Anomaly_Detection/blob/main/paper/Deep_Learning_for_Anomaly_Detection_A_Review.pdf)|Review 논문 <br> - Major Problem Complexities <br> - Main Challenges Tackled <br>  - Categorization of Deep Anomaly Detection <br>   1. Deep Learning for Feature Extraction <br>   2. Learning Feature Representations of Normality <br>   3. End-to-end Anomaly Score Learning| 
 |2|[[2019 ICCV] Memorizing Normality to Detect Anomaly; MemAE](https://github.com/sejin-sim/Anomaly_Detection/blob/main/paper/Memorizing_Normality_to_Detect_Anomaly_(MemAE).pdf)|- AE의 한계점 : 종종 이상치 재구성이 잘 됨 <br>- 제안론 구조 : 인코더-메모리모듈(hard shrinkage operator)-디코더 <br>  1. 인코더 : 인풋을 인코딩하여 쿼리로 사용 <br> 2. 메모리 모듈 <br>   1) 표준 정상 패턴을 기록<br>    2) Hard Shrinkage(유사도가 임계치보다 낮은 경우 0으로 만듬) <br> → 메모리 효율성 & 이상치의 희소성 ↑ <br>  3. 디코더 : 찾은 유사한 정상 패턴을 통해 재구성<br> - 결론 : 재구성 에러가 높은 샘플 = 이상치|
-
+|3|[[2020 KDD] UnSupervised Anomaly Detection on Multivariate Time : USAD](https://github.com/sejin-sim/Anomaly_Detection/blob/main/paper/USAD%20UnSupervised%20Anomaly%20Detection%20on%20Multivariate%20Time.pdf)|- 연구 배경 : 프랑스 통신기업인 Orange에서 IT 모니터링을 위해 개발한 방법론<br>- 구조 : GAN에서 아이디어를 얻어 적대적으로 훈련된 AE를 사용<br>&nbsp;&nbsp;1. Training Stage<br> &nbsp;&nbsp;&nbsp;: 기존 AE 훈련 + 일종의 생성자인 AE_1, 판별자 AE_2를 각각 Loss를 나눠서 훈련<br>&nbsp;&nbsp;&nbsp;ㄴ 훈련 단계에서는 정상 데이터만을 가지고 학습함<br>&nbsp;&nbsp;2. Detectoin stage <br>&nbsp;&nbsp;&nbsp;&nbsp;: Test로, 알파&베타 하이퍼파라미터를 통해 민감도를 정해서 이상치 결정<br>- 실험 결과 : 공공데이터&Orange데이터에서 SOTA 달성<br>- Code : test 시 with torch.no_grad(): 조차 안되어 있음 → 공식 코드는 없지만, 구조 이해에 도움이 됨|
 
 - reference   
 https://hoya012.github.io/blog/anomaly-detection-overview-1/    
